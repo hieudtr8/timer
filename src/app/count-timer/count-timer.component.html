@@ -1,0 +1,11 @@
+<div class="d-block">
+  <button
+    class="btn btn-success m-3"
+    [disabled]="disableStart"
+    (click)="startTimer()"
+  >
+    Start timer
+  </button>
+  <button class="btn btn-danger" (click)="stopTimer()">Stop timer</button>
+</div>
+<div id="time-display">{{ hours }} : {{ minutes }} : {{ seconds }}</div>
